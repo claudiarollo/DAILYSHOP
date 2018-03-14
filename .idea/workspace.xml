@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1830035a-9ca7-431b-90e9-58e2018e9d6a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/it/unisalento/pps/view/Frame.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/DAILYSHOP/it/unisalento/pps/view/GUI/RegistrazioneFrame.class" afterPath="$PROJECT_DIR$/out/production/DAILYSHOP/it/unisalento/pps/view/GUI/RegistrazioneFrame.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/DAILYSHOP/it/unisalento/pps/view/Main.class" afterPath="$PROJECT_DIR$/out/production/DAILYSHOP/it/unisalento/pps/view/Main.class" />
-      <change beforePath="$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/AmministratoreFrame.form" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/AmministratoreFrame.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/GestisciNuoviUtentiFrame.form" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/GestisciNuoviUtentiFrame.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/LoginFrame.form" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/LoginFrame.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/RegistrazioneFrame.form" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/RegistrazioneFrame.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/it/unisalento/pps/view/Main.java" afterPath="$PROJECT_DIR$/src/it/unisalento/pps/view/Main.java" />
+      <change beforePath="$PROJECT_DIR$/src/it/unisalento/pps/view/Frame.java" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,21 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/view/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Frame.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/view/Frame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -129,6 +106,7 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -202,7 +180,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -385,6 +362,46 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/view/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/dao/UtenteDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/model/Utente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/business/LoginBusiness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/view/Frame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/view/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
@@ -498,7 +515,7 @@
     <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/view/Frame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
