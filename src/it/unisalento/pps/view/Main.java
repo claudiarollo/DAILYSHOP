@@ -21,7 +21,7 @@ public class Main {
         frame3.pack();
         frame3.setLocationRelativeTo(null);
         frame3.setSize(400,300);
-        frame3.setVisible(false);
+        frame3.setVisible(true);
 
 
 
@@ -33,7 +33,7 @@ public class Main {
         frame2.pack();
         frame2.setLocationRelativeTo(null);
         frame2.setSize(400,300);
-        frame2.setVisible(true);
+        frame2.setVisible(false);
 
 
 
