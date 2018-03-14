@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="it.unisalento.pps.view.GUI.RegistrazioneFrame">
+  <grid id="27dc6" binding="mainPnl" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="502" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="6441d" binding="northPnl" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="58da7" class="javax.swing.JLabel" binding="registrazioneLbl">
+            <constraints/>
+            <properties>
+              <text value="REGISTRAZIONE"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="c208f" binding="centerPnl" layout-manager="GridLayoutManager" row-count="5" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="3439e" class="javax.swing.JLabel" binding="nomeLbl">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="       Nome:      "/>
+            </properties>
+          </component>
+          <component id="9689" class="javax.swing.JLabel" binding="cognomeLbl">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="       Cognome: "/>
+            </properties>
+          </component>
+          <component id="69a2c" class="javax.swing.JLabel" binding="usernameLbl">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="       Username:"/>
+            </properties>
+          </component>
+          <component id="d0c7a" class="javax.swing.JLabel" binding="emailLbl">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="        Email:        "/>
+            </properties>
+          </component>
+          <component id="aacd3" class="javax.swing.JLabel" binding="passwordLbl">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="        Password:"/>
+            </properties>
+          </component>
+          <component id="83fc3" class="javax.swing.JPasswordField" binding="passwordTxt">
+            <constraints>
+              <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="1331" class="javax.swing.JTextField" binding="emailTxt">
+            <constraints>
+              <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="749b" class="javax.swing.JTextField" binding="usernameTxt">
+            <constraints>
+              <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="d2ade" class="javax.swing.JTextField" binding="cognomeTxt">
+            <constraints>
+              <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="39b6f" class="javax.swing.JTextField" binding="nomeTxt">
+            <constraints>
+              <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+        </children>
+      </grid>
+      <grid id="8723b" binding="southPnl" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="9873" class="javax.swing.JButton" binding="indietroBtn">
+            <constraints/>
+            <properties>
+              <text value="INDIETRO"/>
+            </properties>
+          </component>
+          <hspacer id="d1b1e">
+            <constraints/>
+          </hspacer>
+          <hspacer id="6d1fa">
+            <constraints/>
+          </hspacer>
+          <hspacer id="6e7d">
+            <constraints/>
+          </hspacer>
+          <hspacer id="7e6a5">
+            <constraints/>
+          </hspacer>
+          <hspacer id="d0312">
+            <constraints/>
+          </hspacer>
+          <hspacer id="85cc4">
+            <constraints/>
+          </hspacer>
+          <hspacer id="d92e4">
+            <constraints/>
+          </hspacer>
+          <hspacer id="2e1d1">
+            <constraints/>
+          </hspacer>
+          <hspacer id="6c3f">
+            <constraints/>
+          </hspacer>
+          <hspacer id="c4272">
+            <constraints/>
+          </hspacer>
+          <component id="1d27" class="javax.swing.JButton" binding="confermaBtn">
+            <constraints/>
+            <properties>
+              <text value="CONFERMA REGISTRAZIONE"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

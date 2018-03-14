@@ -16,10 +16,15 @@ public class LoginBusiness {
 
 
     public Utente effettuaLogin(String username, String password) {
-
-        Utente u = UtenteDAO.getInstance().findUserByUsernameAndPassword(username, password);
-
-        return u;
+        Utente u = new Utente();
+        u.setUsername(username);
+        u.setPassword(password);
+        if (u.findbyUserPwd(username, password) != null) {
+            u.setRuolo(u.findbyUserPwd(username, password).getRuolo());
+            return u;
+        } else {
+            return null;
+        }
     }
 
 

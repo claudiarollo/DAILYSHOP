@@ -34,23 +34,42 @@ public class LoginFrame extends JFrame {
                         || e.getSource() instanceof JTextField
                         || e.getSource() instanceof  JPasswordField) {
 
+                    LoginBusiness login = new LoginBusiness();
                     String username = getTxtUsername().getText();
                     String password = new String(getTxtPassword().getPassword());
 
-                    Utente u = LoginBusiness.getInstance().effettuaLogin(username, password);
-
-                    if (u != null) {
-                        JOptionPane.showMessageDialog(null,"LOGIN OK!");
+                    if (username.isEmpty() || password.isEmpty()) {
+                        JOptionPane.showMessageDialog(null, "Inserisci le tue credenziali");
                     }
                     else {
-                        JOptionPane.showMessageDialog(null,"Il login non è andato a buon fine...");
+                        if (login.effettuaLogin(username, password) != null) {
+                            //JOptionPane.showMessageDialog(null,"LOGIN OK!");
+                            String ruolo = login.effettuaLogin(username, password).getRuolo();
+                            if (ruolo.equals("registrato"))
+                            {
+                                JOptionPane.showMessageDialog(null, "Utente registrato loggato con successo");
+                                //apri view utente registrato
+                            }
+                            else if (ruolo.equals("gestore")) {
+                                JOptionPane.showMessageDialog(null, "Gestore loggato con successo");
+                                //apri view gestore
+                            }
+                            else if (ruolo.equals("amministratore")) {
+                                JOptionPane.showMessageDialog(null, "Amministratore loggato con successo");
+                                //apri view admin
+                            }
+                        }
+                        else {
+                            JOptionPane.showMessageDialog(null,"Il login non è andato a buon fine...");
+                        }
                     }
+
                 }
             }
         });
     }
 
-    
+
 
 
     // getter and setter

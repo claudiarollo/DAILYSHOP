@@ -9,8 +9,6 @@ public class Utente {
     private String password;
     private String ruolo;
 
-
-
     public int getIdUtente() {
         return idUtente;
     }
@@ -43,5 +41,21 @@ public class Utente {
         this.ruolo = ruolo;
     }
 
+
+
+    public Utente findbyUserPwd(String username, String password) {
+        UtenteDAO uDAO = new UtenteDAO();
+        return uDAO.findUserByUsernameAndPassword(username, password);
+    }
+
+    public boolean findUser(String username){
+        UtenteDAO ud = new UtenteDAO();
+        return ud.findUsername(username);
+    }
+
+    public boolean findEmail(String email){
+        UtenteDAO uda = new UtenteDAO();
+        return uda.findEmail(email);
+    }
 }
 

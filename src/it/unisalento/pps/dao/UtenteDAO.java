@@ -16,19 +16,7 @@ public class UtenteDAO {
         return instance;
     }
 
-
-    public Utente findById(int id) {
-        return null;
-    }
-
-
-    public ArrayList<Utente> findAll() {
-        return null;
-    }
-
-
     public Utente findUserByUsernameAndPassword(String username, String password) {
-
         String query = "SELECT * FROM utente WHERE " +
                 "username = '" + username + "' AND " +
                 "password = '" + password + "'";
@@ -42,8 +30,27 @@ public class UtenteDAO {
             String riga[]= ris.get(0);
             u.setUsername(riga[3]);
             u.setPassword(riga[5]);
+            u.setRuolo(riga[6]);
             return u;
         }
+    }
+
+    public boolean findUsername(String username) {
+        String query1 = "SELECT username FROM utente WHERE username='"+username+"'";
+        ArrayList<String[]> ris1 = DbConnection.getInstance().eseguiQuery(query1);
+        if (ris1.isEmpty())
+            return false;
+        else
+            return true;
+    }
+
+    public boolean findEmail(String email) {
+        String query2 = "SELECT email FROM utente WHERE email='"+email+"'";
+        ArrayList<String[]> ris2 = DbConnection.getInstance().eseguiQuery(query2);
+        if (ris2.isEmpty())
+            return false;
+        else
+            return true;
     }
 
 
