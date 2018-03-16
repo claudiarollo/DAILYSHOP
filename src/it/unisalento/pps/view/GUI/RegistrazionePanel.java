@@ -1,6 +1,7 @@
 package it.unisalento.pps.view.GUI;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class RegistrazionePanel {
     private JPanel registrazionePanel;
@@ -32,6 +33,8 @@ public class RegistrazionePanel {
     private JButton registratiBtn;
     private JLabel cifrecartaLbl;
     private JLabel cifrecapLbl;
+    private JPanel nordPnl;
+    private JLabel logoLbl;
 
 
     public RegistrazionePanel(){

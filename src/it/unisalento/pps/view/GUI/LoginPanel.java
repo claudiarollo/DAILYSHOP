@@ -10,6 +10,7 @@ public class LoginPanel {
     private JPasswordField passwordTxt;
     private JButton indietroBtn;
     private JButton loginBtn;
+    private JLabel logoLbl;
 
 
     public LoginPanel() {
