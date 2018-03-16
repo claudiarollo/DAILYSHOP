@@ -1,12 +1,16 @@
 package it.unisalento.pps.view;
 
+import it.unisalento.pps.view.ActionListener.LoginListener;
+import it.unisalento.pps.view.GUI.LoginPanel;
+
 import javax.swing.*;
 import java.awt.*;
 
 public class Frame extends JFrame {
 
     // COMPONENTI
-    // ... dichiarazione pannelli LoginPanel, RegistrazionePanel ecc.
+
+    LoginPanel loginPanel = new LoginPanel();
 
 
 
@@ -29,6 +33,8 @@ public class Frame extends JFrame {
             rootPnl.add(centroPnl, BorderLayout.CENTER);
             rootPnl.add(sudPnl, BorderLayout.SOUTH);
 
+            centroPnl.add(loginPanel.getLoginPanel());
+
 
         view.setContentPane(rootPnl);
         view.setVisible(true);
@@ -38,8 +44,17 @@ public class Frame extends JFrame {
 
 
         //ACTION LISTENERS
-        // ...
+
+        // action login
+        LoginListener loginlistener = new LoginListener(this);
+
+        loginPanel.getLoginBtn().addActionListener(loginlistener);
+        loginPanel.getLoginBtn().setActionCommand(LoginListener.LOGIN);
 
     }
 
+
+    public LoginPanel getLoginPanel() {
+        return loginPanel;
+    }
 }
