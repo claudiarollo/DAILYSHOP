@@ -22,9 +22,11 @@ public class UtenteRegistratoDAO {
     // per effettuare la registrazione
     public boolean registrazione(UtenteRegistrato registrato) {
 
-        String query = "INSERT INTO utente(nome,cognome,username,email,password,ruolo, statoregistrazione) VALUES('"+registrato.getNome()+
-                        "','"+registrato.getCognome()+"','"+registrato.getUsername()+"','"+registrato.getEmail()+
-                        "','"+registrato.getPassword()+"','registrato', '1')";
+        String query = "INSERT INTO utente(nome,cognome,username,email,password,ruolo,statoregistrazione,indirizzo,città,provincia,cap," +
+                        "recapito,codicecarta) VALUES('"+registrato.getNome()+"','"+registrato.getCognome()+"','"+registrato.getUsername()+
+                        "','"+registrato.getEmail()+"','"+registrato.getPassword()+"','registrato', '1', '"+registrato.getIndirizzo()+
+                        "', '"+registrato.getCittà()+"', '"+registrato.getProvincia()+"', '"+registrato.getCap()+"', " +
+                        "'"+registrato.getRecapito()+"', '"+registrato.getCodicecarta()+"')";
         boolean ris = DbConnection.getInstance().eseguiAggiornamento(query);
         return ris;
     }

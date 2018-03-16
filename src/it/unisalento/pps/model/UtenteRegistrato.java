@@ -11,6 +11,12 @@ public class UtenteRegistrato extends Utente {
     private String username;
     private String email;
     private String password;
+    private String indirizzo;
+    private String città;
+    private String provincia;
+    private String cap;
+    private String recapito;
+    private String codicecarta;
 
     public String getNome() {
         return nome;
@@ -50,6 +56,54 @@ public class UtenteRegistrato extends Utente {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getIndirizzo() {
+        return indirizzo;
+    }
+
+    public void setIndirizzo(String indirizzo) {
+        this.indirizzo = indirizzo;
+    }
+
+    public String getCittà() {
+        return città;
+    }
+
+    public void setCittà(String città) {
+        this.città = città;
+    }
+
+    public String getProvincia() {
+        return provincia;
+    }
+
+    public void setProvincia(String provincia) {
+        this.provincia = provincia;
+    }
+
+    public String getCap() {
+        return cap;
+    }
+
+    public void setCap(String cap) {
+        this.cap = cap;
+    }
+
+    public String getRecapito() {
+        return recapito;
+    }
+
+    public void setRecapito(String recapito) {
+        this.recapito = recapito;
+    }
+
+    public String getCodicecarta() {
+        return codicecarta;
+    }
+
+    public void setCodicecarta(String codicecarta) {
+        this.codicecarta = codicecarta;
     }
 
     //

@@ -17,7 +17,8 @@ public class UtenteRegistratoBusiness {
 
 
     //per registrarsi
-    public boolean effettuaRegistrazione(String nome, String cognome, String username, String email, String password){
+    public boolean effettuaRegistrazione(String nome, String cognome, String username, String email, String password, String indirizzo,
+                                         String città, String provincia, String cap, String recapito, String codicecarta) {
 
         UtenteRegistrato u = new UtenteRegistrato();
         u.setNome(nome);
@@ -25,6 +26,12 @@ public class UtenteRegistratoBusiness {
         u.setUsername(username);
         u.setEmail(email);
         u.setPassword(password);
+        u.setIndirizzo(indirizzo);
+        u.setCittà(città);
+        u.setProvincia(provincia);
+        u.setCap(cap);
+        u.setRecapito(recapito);
+        u.setCodicecarta(codicecarta);
         u.registrazione(u);
         return true;
     }
