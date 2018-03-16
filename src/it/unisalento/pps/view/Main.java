@@ -1,12 +1,13 @@
 package it.unisalento.pps.view;
 
 import javax.swing.*;
+import it.unisalento.pps.view.Frame;
 
 public class Main {
 
     public static void main(String args[]){
 
-
+        Frame frame = new Frame();
 
 
 
