@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="it.unisalento.pps.view.GUI.HomePanel">
+  <grid id="27dc6" binding="homePanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="1200" height="788"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="bcc60" binding="sudPnl" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="87dc1" class="javax.swing.JButton" binding="loginBtn">
+            <constraints/>
+            <properties>
+              <text value="LOGIN"/>
+            </properties>
+          </component>
+          <hspacer id="f2082">
+            <constraints/>
+          </hspacer>
+          <hspacer id="be802">
+            <constraints/>
+          </hspacer>
+          <hspacer id="d36f4">
+            <constraints/>
+          </hspacer>
+          <hspacer id="b75f6">
+            <constraints/>
+          </hspacer>
+          <hspacer id="a1333">
+            <constraints/>
+          </hspacer>
+          <hspacer id="a35a7">
+            <constraints/>
+          </hspacer>
+          <component id="97cea" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <text value="Non hai un account?"/>
+            </properties>
+          </component>
+          <component id="e02af" class="javax.swing.JButton" binding="registratiBtn">
+            <constraints/>
+            <properties>
+              <text value="REGISTRATI"/>
+            </properties>
+          </component>
+          <hspacer id="1736b">
+            <constraints/>
+          </hspacer>
+          <hspacer id="3a59">
+            <constraints/>
+          </hspacer>
+          <hspacer id="9e119">
+            <constraints/>
+          </hspacer>
+          <hspacer id="42391">
+            <constraints/>
+          </hspacer>
+          <hspacer id="b8812">
+            <constraints/>
+          </hspacer>
+          <component id="1aeaa" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <text value="Oppure:"/>
+            </properties>
+          </component>
+          <component id="44755" class="javax.swing.JButton" binding="VISUALIZZAILCATALOGOButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="VISUALIZZA IL CATALOGO"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="7ac6a" class="javax.swing.JLabel" binding="homeiconLbl">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <icon value="iconhome.png"/>
+          <text value=""/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

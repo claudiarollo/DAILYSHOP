@@ -19,7 +19,7 @@ public class UtenteDAO {
     public Utente findUserByUsernameAndPassword(String username, String password) {
         String query = "SELECT * FROM utente WHERE " +
                 "username = '" + username + "' AND " +
-                "password = '" + password + "'";
+                "password = '" + password + "' AND statoregistrazione = '0'";
         ArrayList<String[]> ris = DbConnection.getInstance().eseguiQuery(query);
 
         if (ris.isEmpty()) {

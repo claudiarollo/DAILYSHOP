@@ -10,7 +10,9 @@ import java.awt.event.ActionListener;
 public class LoginListener implements ActionListener {
 
     private Frame frame;
+
     public final static String LOGIN = "effettua il login";
+    public final static String INDIETRO_DA_LOGIN = "Vai indietro alla home";
 
 
     public LoginListener(Frame frame) {
@@ -57,6 +59,12 @@ public class LoginListener implements ActionListener {
             } catch (Exception e1) {
                 JOptionPane.showMessageDialog(null, "I caratteri inseriti non sono validi");
             }
+        }
+
+
+        if(sorgenteEvento.equals(INDIETRO_DA_LOGIN)){
+            frame.getLoginPanel().getLoginPanel().setVisible(false);
+            frame.getHomePanel().getHomePanel().setVisible(true);
         }
 
     }

@@ -1,12 +1,10 @@
 package it.unisalento.pps.view;
 
 import it.unisalento.pps.view.ActionListener.AmministratoreListener;
+import it.unisalento.pps.view.ActionListener.HomeListener;
 import it.unisalento.pps.view.ActionListener.LoginListener;
 import it.unisalento.pps.view.ActionListener.RegistrazioneListener;
-import it.unisalento.pps.view.GUI.AmministratorePanel;
-import it.unisalento.pps.view.GUI.GestisciNuoviUtentiPanel;
-import it.unisalento.pps.view.GUI.LoginPanel;
-import it.unisalento.pps.view.GUI.RegistrazionePanel;
+import it.unisalento.pps.view.GUI.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -19,6 +17,7 @@ public class Frame extends JFrame {
     RegistrazionePanel registrazionePanel = new RegistrazionePanel();
     AmministratorePanel amministratorePanel = new AmministratorePanel();
     GestisciNuoviUtentiPanel gestisciNuoviUtentiPanel = new GestisciNuoviUtentiPanel();
+    HomePanel homePanel = new HomePanel();
 
 
 
@@ -34,12 +33,15 @@ public class Frame extends JFrame {
 
     public Frame() {
         view.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        view.setPreferredSize(new Dimension(1300, 750));
-        view.setLocation(65, 25);
+        view.setPreferredSize(new Dimension(1200, 750));
+        view.setLocation(115, 25);
             rootPnl.setLayout(new BorderLayout());
             rootPnl.add(nordPnl, BorderLayout.NORTH);
             rootPnl.add(centroPnl, BorderLayout.CENTER);
             rootPnl.add(sudPnl, BorderLayout.SOUTH);
+
+
+            nordPnl.add(homePanel.getHomePanel());
 
             centroPnl.add(loginPanel.getLoginPanel());
             centroPnl.add(registrazionePanel.getRegistrazionePanel());
@@ -56,22 +58,38 @@ public class Frame extends JFrame {
 
         //ACTION LISTENERS
 
+
+
+        HomeListener homeListener = new HomeListener(this);
+
+        homePanel.getLoginBtn().addActionListener(homeListener);
+        homePanel.getLoginBtn().setActionCommand(HomeListener.LOGIN_BTN_HOME);
+        homePanel.getRegistratiBtn().addActionListener(homeListener);
+        homePanel.getRegistratiBtn().setActionCommand(HomeListener.REGISTRATI_BTN_HOME);
+
+
         LoginListener loginlistener = new LoginListener(this);
 
         loginPanel.getLoginBtn().addActionListener(loginlistener);
         loginPanel.getLoginBtn().setActionCommand(LoginListener.LOGIN);
+        loginPanel.getIndietroBtn().addActionListener(loginlistener);
+        loginPanel.getIndietroBtn().setActionCommand(LoginListener.INDIETRO_DA_LOGIN);
 
 
         RegistrazioneListener registrazionelistener = new RegistrazioneListener(this);
 
         registrazionePanel.getRegistratiBtn().addActionListener(registrazionelistener);
-        registrazionePanel.getRegistratiBtn().setActionCommand(RegistrazioneListener.REGISTRATI_BTN);
+        registrazionePanel.getRegistratiBtn().setActionCommand(RegistrazioneListener.CONFERMA_BTN);
+        registrazionePanel.getIndietroBtn().addActionListener(registrazionelistener);
+        registrazionePanel.getIndietroBtn().setActionCommand(RegistrazioneListener.INDIETRO_DA_REGISTRAZIONE);
 
 
         AmministratoreListener amministratoreListener = new AmministratoreListener(this);
 
         amministratorePanel.getGestisciUtentiBtn().addActionListener(amministratoreListener);
         amministratorePanel.getGestisciUtentiBtn().setActionCommand(AmministratoreListener.GESTISCINUOVIUTENTI);
+        amministratorePanel.getLogoutBtn().addActionListener(amministratoreListener);
+        amministratorePanel.getLogoutBtn().setActionCommand(AmministratoreListener.LOGOUT);
 
         gestisciNuoviUtentiPanel.getConfermaUtenteBtn().addActionListener(amministratoreListener);
         gestisciNuoviUtentiPanel.getConfermaUtenteBtn().setActionCommand(AmministratoreListener.CONFERMAUTENTE);
@@ -101,5 +119,9 @@ public class Frame extends JFrame {
 
     public GestisciNuoviUtentiPanel getGestisciNuoviUtentiPanel() {
         return gestisciNuoviUtentiPanel;
+    }
+
+    public HomePanel getHomePanel() {
+        return homePanel;
     }
 }

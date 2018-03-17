@@ -20,6 +20,7 @@ public class AmministratoreListener implements ActionListener {
     public final static String RIFIUTAUTENTE = "Rifiuta la richiesta di un utente";
     public final static String RIFIUTATUTTI = "Rifiuta tutte le richieste di registrazione";
     public final static String INDIETRO_DA_GESTISCINUOVIUTENTI = "Torna indietro dal pannello gestisciNuoviUtenti";
+    public final static String LOGOUT = "Logout con ritorno alla home";
 
 
     public AmministratoreListener(Frame frame){
@@ -128,6 +129,17 @@ public class AmministratoreListener implements ActionListener {
         if(sorgenteEvento.equals(INDIETRO_DA_GESTISCINUOVIUTENTI)){
             frame.getGestisciNuoviUtentiPanel().getGestisciNuoviUtentiPanel().setVisible(false);
             frame.getAmministratorePanel().getAmministratorePanel().setVisible(true);
+        }
+
+
+        if(sorgenteEvento.equals(LOGOUT)){
+            int dialogresult = JOptionPane.showConfirmDialog(null, "Sicuro di voler effettuare il logout?");
+
+            if (dialogresult == JOptionPane.YES_OPTION) {
+                frame.getAmministratorePanel().getAmministratorePanel().setVisible(false);
+                frame.getHomePanel().getHomePanel().setVisible(true);
+            }
+            else if (dialogresult == JOptionPane.NO_OPTION) { }
         }
 
     }

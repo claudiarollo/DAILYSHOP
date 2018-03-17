@@ -14,7 +14,8 @@ public class RegistrazioneListener implements ActionListener {
 
     private Frame frame;
 
-    public final static String REGISTRATI_BTN = "RegistratiBtn";
+    public final static String CONFERMA_BTN = "RegistratiBtn";
+    public final static String INDIETRO_DA_REGISTRAZIONE = "Torna indetro alla home";
 
 
     public RegistrazioneListener(Frame frame) {
@@ -29,7 +30,7 @@ public class RegistrazioneListener implements ActionListener {
         String sorgenteEvento = e.getActionCommand();
 
 
-        if(sorgenteEvento.equals(REGISTRATI_BTN)) {
+        if(sorgenteEvento.equals(CONFERMA_BTN)) {
 
             try {
                 String nome = frame.getRegistrazionePanel().getNomeTxt().getText();
@@ -68,6 +69,12 @@ public class RegistrazioneListener implements ActionListener {
             } catch (Exception e1) {
                 JOptionPane.showMessageDialog(null, "I caratteri inseriti non sono validi");
             }
+        }
+
+
+        if(sorgenteEvento.equals(INDIETRO_DA_REGISTRAZIONE)){
+            frame.getRegistrazionePanel().getRegistrazionePanel().setVisible(false);
+            frame.getHomePanel().getHomePanel().setVisible(true);
         }
     }
 }
