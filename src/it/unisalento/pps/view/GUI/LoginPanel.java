@@ -15,7 +15,7 @@ public class LoginPanel {
 
     public LoginPanel() {
         loginPanel.getUI();
-        loginPanel.setVisible(false);
+        loginPanel.setVisible(true);
     }
 
 

@@ -41,9 +41,9 @@ public class UtenteRegistratoDAO {
         while(i.hasNext()) {
             String riga[] = i.next();
             UtenteRegistrato ur = new UtenteRegistrato();
-            ur.setIdUtente(Integer.parseInt(riga[0]));
+            //ur.setIdUtente(Integer.parseInt(riga[0]));
             ur.setUsername(riga[3]);
-            ur.setEmail(riga[4]);
+            //ur.setEmail(riga[4]);
             nuoviutenti.add(ur);
         }
         return nuoviutenti;

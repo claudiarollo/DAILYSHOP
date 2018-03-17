@@ -43,6 +43,7 @@ public class LoginListener implements ActionListener {
                         else if (ruolo.equals("amministratore")) {
                             JOptionPane.showMessageDialog(null, "Amministratore loggato con successo");
                             frame.getLoginPanel().getLoginPanel().setVisible(false);
+                            frame.getAmministratorePanel().getAmministratorePanel().setVisible(true);
                         }
                         else if (ruolo.equals("gestore")) {
                             JOptionPane.showMessageDialog(null, "Gestore loggato con successo");

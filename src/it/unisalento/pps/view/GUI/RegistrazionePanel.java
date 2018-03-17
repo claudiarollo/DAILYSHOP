@@ -39,7 +39,7 @@ public class RegistrazionePanel {
 
     public RegistrazionePanel(){
         registrazionePanel.getUI();
-        registrazionePanel.setVisible(true);
+        registrazionePanel.setVisible(false);
     }
 
 
