@@ -15,6 +15,7 @@
           <component id="87dc1" class="javax.swing.JButton" binding="loginBtn">
             <constraints/>
             <properties>
+              <opaque value="true"/>
               <text value="LOGIN"/>
             </properties>
           </component>
@@ -33,7 +34,16 @@
           <hspacer id="a1333">
             <constraints/>
           </hspacer>
+          <hspacer id="d107d">
+            <constraints/>
+          </hspacer>
+          <hspacer id="7f3d6">
+            <constraints/>
+          </hspacer>
           <hspacer id="a35a7">
+            <constraints/>
+          </hspacer>
+          <hspacer id="2f170">
             <constraints/>
           </hspacer>
           <component id="97cea" class="javax.swing.JLabel">
@@ -63,12 +73,18 @@
           <hspacer id="b8812">
             <constraints/>
           </hspacer>
-          <component id="1aeaa" class="javax.swing.JLabel">
+          <hspacer id="e679b">
             <constraints/>
-            <properties>
-              <text value="Oppure:"/>
-            </properties>
-          </component>
+          </hspacer>
+          <hspacer id="f48b1">
+            <constraints/>
+          </hspacer>
+          <hspacer id="58420">
+            <constraints/>
+          </hspacer>
+          <hspacer id="c1f87">
+            <constraints/>
+          </hspacer>
           <component id="44755" class="javax.swing.JButton" binding="VISUALIZZAILCATALOGOButton" default-binding="true">
             <constraints/>
             <properties>
