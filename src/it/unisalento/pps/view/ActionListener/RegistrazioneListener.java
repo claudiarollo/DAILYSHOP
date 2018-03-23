@@ -4,6 +4,7 @@ import it.unisalento.pps.business.UtenteBusiness;
 import it.unisalento.pps.business.UtenteRegistratoBusiness;
 import it.unisalento.pps.model.UtenteRegistrato;
 import it.unisalento.pps.view.Frame;
+import it.unisalento.pps.view.GUI.RegistrazionePanel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -58,16 +59,65 @@ public class RegistrazioneListener implements ActionListener {
                         UtenteRegistratoBusiness urb = new UtenteRegistratoBusiness();
                         urb.effettuaRegistrazione(nome, cognome, username, email, password, indirizzo, città, provincia, cap, recapito, codicecarta);
                         JOptionPane.showMessageDialog(null, "Richiesta di registrazione effettuata con successo. " +
-                                                        "Attendi di essere confermato dall'amministratore");
+                                                        "Nell'attesa di essere confermato dall'amministratore verrai indirizzato alla nostra HOME.");
+                        frame.getRegistrazionePanel().getRegistrazionePanel().setVisible(false);
+                        frame.getHomePanel().getHomePanel().setVisible(true);
+
+                        frame.getRegistrazionePanel().getNomeTxt().setText(null);
+                        frame.getRegistrazionePanel().getCognomeTxt().setText(null);
+                        frame.getRegistrazionePanel().getUsernameTxt().setText(null);
+                        frame.getRegistrazionePanel().getEmailTxt().setText(null);
+                        frame.getRegistrazionePanel().getPasswordTxt().setText(null);
+                        frame.getRegistrazionePanel().getIndirizzoTxt().setText(null);
+                        frame.getRegistrazionePanel().getCittàTxt().setText(null);
+                        frame.getRegistrazionePanel().getProvinciaTxt().setText(null);
+                        frame.getRegistrazionePanel().getCapTxt().setText(null);
+                        frame.getRegistrazionePanel().getRecapitoTxt().setText(null);
+                        frame.getRegistrazionePanel().getCodicecartaTxt().setText(null);
                     }
-                    else if (esitoUser==true && esitoMail==false)
+                    else if (esitoUser==true && esitoMail==false) {
                         JOptionPane.showMessageDialog(null, "Il tuo username è stato già scelto da qualcuno. Per favore " +
-                                                        "scegli un altro username");
-                    else if (esitoUser==false && esitoMail==true)
+                                "scegli un altro username");
+                        frame.getRegistrazionePanel().getNomeTxt().setText(null);
+                        frame.getRegistrazionePanel().getCognomeTxt().setText(null);
+                        frame.getRegistrazionePanel().getUsernameTxt().setText(null);
+                        frame.getRegistrazionePanel().getEmailTxt().setText(null);
+                        frame.getRegistrazionePanel().getPasswordTxt().setText(null);
+                        frame.getRegistrazionePanel().getIndirizzoTxt().setText(null);
+                        frame.getRegistrazionePanel().getCittàTxt().setText(null);
+                        frame.getRegistrazionePanel().getProvinciaTxt().setText(null);
+                        frame.getRegistrazionePanel().getCapTxt().setText(null);
+                        frame.getRegistrazionePanel().getRecapitoTxt().setText(null);
+                        frame.getRegistrazionePanel().getCodicecartaTxt().setText(null);
+                    }
+                    else if (esitoUser==false && esitoMail==true) {
                         JOptionPane.showMessageDialog(null, "Questa email è già in uso!");
+                        frame.getRegistrazionePanel().getNomeTxt().setText(null);
+                        frame.getRegistrazionePanel().getCognomeTxt().setText(null);
+                        frame.getRegistrazionePanel().getUsernameTxt().setText(null);
+                        frame.getRegistrazionePanel().getEmailTxt().setText(null);
+                        frame.getRegistrazionePanel().getPasswordTxt().setText(null);
+                        frame.getRegistrazionePanel().getIndirizzoTxt().setText(null);
+                        frame.getRegistrazionePanel().getCittàTxt().setText(null);
+                        frame.getRegistrazionePanel().getProvinciaTxt().setText(null);
+                        frame.getRegistrazionePanel().getCapTxt().setText(null);
+                        frame.getRegistrazionePanel().getRecapitoTxt().setText(null);
+                        frame.getRegistrazionePanel().getCodicecartaTxt().setText(null);
+                    }
                 }
             } catch (Exception e1) {
                 JOptionPane.showMessageDialog(null, "I caratteri inseriti non sono validi");
+                frame.getRegistrazionePanel().getNomeTxt().setText(null);
+                frame.getRegistrazionePanel().getCognomeTxt().setText(null);
+                frame.getRegistrazionePanel().getUsernameTxt().setText(null);
+                frame.getRegistrazionePanel().getEmailTxt().setText(null);
+                frame.getRegistrazionePanel().getPasswordTxt().setText(null);
+                frame.getRegistrazionePanel().getIndirizzoTxt().setText(null);
+                frame.getRegistrazionePanel().getCittàTxt().setText(null);
+                frame.getRegistrazionePanel().getProvinciaTxt().setText(null);
+                frame.getRegistrazionePanel().getCapTxt().setText(null);
+                frame.getRegistrazionePanel().getRecapitoTxt().setText(null);
+                frame.getRegistrazionePanel().getCodicecartaTxt().setText(null);
             }
         }
 
@@ -75,6 +125,18 @@ public class RegistrazioneListener implements ActionListener {
         if(sorgenteEvento.equals(INDIETRO_DA_REGISTRAZIONE)){
             frame.getRegistrazionePanel().getRegistrazionePanel().setVisible(false);
             frame.getHomePanel().getHomePanel().setVisible(true);
+
+            frame.getRegistrazionePanel().getNomeTxt().setText(null);
+            frame.getRegistrazionePanel().getCognomeTxt().setText(null);
+            frame.getRegistrazionePanel().getUsernameTxt().setText(null);
+            frame.getRegistrazionePanel().getEmailTxt().setText(null);
+            frame.getRegistrazionePanel().getPasswordTxt().setText(null);
+            frame.getRegistrazionePanel().getIndirizzoTxt().setText(null);
+            frame.getRegistrazionePanel().getCittàTxt().setText(null);
+            frame.getRegistrazionePanel().getProvinciaTxt().setText(null);
+            frame.getRegistrazionePanel().getCapTxt().setText(null);
+            frame.getRegistrazionePanel().getRecapitoTxt().setText(null);
+            frame.getRegistrazionePanel().getCodicecartaTxt().setText(null);
         }
     }
 }

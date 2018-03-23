@@ -18,6 +18,8 @@ public class Frame extends JFrame {
     AmministratorePanel amministratorePanel = new AmministratorePanel();
     GestisciNuoviUtentiPanel gestisciNuoviUtentiPanel = new GestisciNuoviUtentiPanel();
     HomePanel homePanel = new HomePanel();
+    NordCatalogoPanel nordCatalogoPanel = new NordCatalogoPanel();
+    CatalogoPanel catalogoPanel = new CatalogoPanel();
 
 
 
@@ -42,11 +44,13 @@ public class Frame extends JFrame {
 
 
             nordPnl.add(homePanel.getHomePanel());
+            nordPnl.add(nordCatalogoPanel.getNordCatalogoPnl());
 
             centroPnl.add(loginPanel.getLoginPanel());
             centroPnl.add(registrazionePanel.getRegistrazionePanel());
             centroPnl.add(amministratorePanel.getAmministratorePanel());
             centroPnl.add(gestisciNuoviUtentiPanel.getGestisciNuoviUtentiPanel());
+            centroPnl.add(catalogoPanel.getCatalogoPnl());
 
 
         view.setContentPane(rootPnl);
@@ -123,5 +127,13 @@ public class Frame extends JFrame {
 
     public HomePanel getHomePanel() {
         return homePanel;
+    }
+
+    public NordCatalogoPanel getNordCatalogoPanel() {
+        return nordCatalogoPanel;
+    }
+
+    public CatalogoPanel getCatalogoPanel() {
+        return catalogoPanel;
     }
 }

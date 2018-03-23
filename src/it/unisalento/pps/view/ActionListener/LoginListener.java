@@ -41,23 +41,33 @@ public class LoginListener implements ActionListener {
                         if (ruolo.equals("registrato")) {
                             JOptionPane.showMessageDialog(null, "Login effettuato con successo");
                             frame.getLoginPanel().getLoginPanel().setVisible(false);
+                            frame.getLoginPanel().getUsernameTxt().setText(null);
+                            frame.getLoginPanel().getPasswordTxt().setText(null);
                         }
                         else if (ruolo.equals("amministratore")) {
                             JOptionPane.showMessageDialog(null, "Amministratore loggato con successo");
                             frame.getLoginPanel().getLoginPanel().setVisible(false);
                             frame.getAmministratorePanel().getAmministratorePanel().setVisible(true);
+                            frame.getLoginPanel().getUsernameTxt().setText(null);
+                            frame.getLoginPanel().getPasswordTxt().setText(null);
                         }
                         else if (ruolo.equals("gestore")) {
                             JOptionPane.showMessageDialog(null, "Gestore loggato con successo");
                             frame.getLoginPanel().getLoginPanel().setVisible(false);
+                            frame.getLoginPanel().getUsernameTxt().setText(null);
+                            frame.getLoginPanel().getPasswordTxt().setText(null);
                         }
                     }
                     else {
                         JOptionPane.showMessageDialog(null, "Il login non è andato a buon fine...");
+                        frame.getLoginPanel().getUsernameTxt().setText(null);
+                        frame.getLoginPanel().getPasswordTxt().setText(null);
                         }
                 }
             } catch (Exception e1) {
                 JOptionPane.showMessageDialog(null, "I caratteri inseriti non sono validi");
+                frame.getLoginPanel().getUsernameTxt().setText(null);
+                frame.getLoginPanel().getPasswordTxt().setText(null);
             }
         }
 
@@ -65,6 +75,8 @@ public class LoginListener implements ActionListener {
         if(sorgenteEvento.equals(INDIETRO_DA_LOGIN)){
             frame.getLoginPanel().getLoginPanel().setVisible(false);
             frame.getHomePanel().getHomePanel().setVisible(true);
+            frame.getLoginPanel().getUsernameTxt().setText(null);
+            frame.getLoginPanel().getPasswordTxt().setText(null);
         }
 
     }
