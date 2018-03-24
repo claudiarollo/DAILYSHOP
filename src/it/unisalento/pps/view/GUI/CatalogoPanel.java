@@ -1,6 +1,11 @@
 package it.unisalento.pps.view.GUI;
 
+import it.unisalento.pps.business.ProdottoBusiness;
+import it.unisalento.pps.model.Prodotto;
+
 import javax.swing.*;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import java.awt.*;
 
 public class CatalogoPanel {
@@ -19,6 +24,7 @@ public class CatalogoPanel {
     private JButton vediInfoProdottoBtn;
     private JButton shoppingbagBtn;
     private JLabel numeroProdottiCarrelloLbl;
+    private JPanel destraPnl1;
 
 
     public CatalogoPanel(){
@@ -26,8 +32,38 @@ public class CatalogoPanel {
         catalogoPnl.setVisible(true);
         
         catalogoPnl.setPreferredSize(new Dimension(1000,470));
+
+        prodottiList.addListSelectionListener(new listaProdottiListener());
     }
 
+
+    public class listaProdottiListener implements ListSelectionListener{
+        @Override
+        public void valueChanged(ListSelectionEvent e) {
+            try{
+                if(e.getSource() == prodottiList) {
+
+                    nomeProdottoLbl.setText(null);
+                    descrizioneProdottoLbl.setText(null);
+                    prezzoProdottoLbl.setText(null);
+                    scontoProdottoLbl.setText(null);
+                    produttoreProdottoLbl.setText(null);
+                    distributoreProdottoLbl.setText(null);
+
+                    //if(prodottiList.getSelectedValue().toString() == null) return;
+
+                    ProdottoBusiness pb = new ProdottoBusiness();
+                    nomeProdottoLbl.setText(pb.trovaInfoByNomeProdotto(prodottiList.getSelectedValue().toString()).getNome());
+                    descrizioneProdottoLbl.setText(pb.trovaInfoByNomeProdotto(prodottiList.getSelectedValue().toString()).getDescrizione());
+                    prezzoProdottoLbl.setText(pb.trovaInfoByNomeProdotto(prodottiList.getSelectedValue().toString()).getPrezzo());
+                    scontoProdottoLbl.setText(pb.trovaInfoByNomeProdotto(prodottiList.getSelectedValue().toString()).getSconto());
+                    produttoreProdottoLbl.setText(pb.trovaInfoByNomeProdotto(prodottiList.getSelectedValue().toString()).getProduttore());
+                    distributoreProdottoLbl.setText(pb.trovaInfoByNomeProdotto(prodottiList.getSelectedValue().toString()).getDistributore());
+                }
+            }
+            catch (Exception e1){}
+        }
+    }
 
 
     public JButton getVediInfoProdottoBtn() {
@@ -148,5 +184,13 @@ public class CatalogoPanel {
 
     public void setNumeroProdottiCarrelloLbl(JLabel numeroProdottiCarrelloLbl) {
         this.numeroProdottiCarrelloLbl = numeroProdottiCarrelloLbl;
+    }
+
+    public JPanel getDestraPnl1() {
+        return destraPnl1;
+    }
+
+    public void setDestraPnl1(JPanel destraPnl1) {
+        this.destraPnl1 = destraPnl1;
     }
 }

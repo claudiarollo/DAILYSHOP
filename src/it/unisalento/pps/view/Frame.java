@@ -1,9 +1,6 @@
 package it.unisalento.pps.view;
 
-import it.unisalento.pps.view.ActionListener.AmministratoreListener;
-import it.unisalento.pps.view.ActionListener.HomeListener;
-import it.unisalento.pps.view.ActionListener.LoginListener;
-import it.unisalento.pps.view.ActionListener.RegistrazioneListener;
+import it.unisalento.pps.view.ActionListener.*;
 import it.unisalento.pps.view.GUI.*;
 
 import javax.swing.*;
@@ -105,6 +102,12 @@ public class Frame extends JFrame {
         gestisciNuoviUtentiPanel.getRifiutaTuttiBtn().setActionCommand(AmministratoreListener.RIFIUTATUTTI);
         gestisciNuoviUtentiPanel.getIndietroBtn().addActionListener(amministratoreListener);
         gestisciNuoviUtentiPanel.getIndietroBtn().setActionCommand(AmministratoreListener.INDIETRO_DA_GESTISCINUOVIUTENTI);
+
+
+        CatalogoListener catalogoListener = new CatalogoListener(this);
+
+        nordCatalogoPanel.getVisualizzaTuttiBtn().addActionListener(catalogoListener);
+        nordCatalogoPanel.getVisualizzaTuttiBtn().setActionCommand(CatalogoListener.VISUALIZZATUTTI);
 
     }
 
