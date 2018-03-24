@@ -67,6 +67,8 @@ public class Frame extends JFrame {
         homePanel.getLoginBtn().setActionCommand(HomeListener.LOGIN_BTN_HOME);
         homePanel.getRegistratiBtn().addActionListener(homeListener);
         homePanel.getRegistratiBtn().setActionCommand(HomeListener.REGISTRATI_BTN_HOME);
+        homePanel.getVISUALIZZAILCATALOGOButton().addActionListener(homeListener);
+        homePanel.getVISUALIZZAILCATALOGOButton().setActionCommand(HomeListener.VEDICATALOGO);
 
 
         LoginListener loginlistener = new LoginListener(this);
@@ -108,6 +110,9 @@ public class Frame extends JFrame {
 
         nordCatalogoPanel.getVisualizzaTuttiBtn().addActionListener(catalogoListener);
         nordCatalogoPanel.getVisualizzaTuttiBtn().setActionCommand(CatalogoListener.VISUALIZZATUTTI);
+
+        catalogoPanel.getBackhomeBtn().addActionListener(catalogoListener);
+        catalogoPanel.getBackhomeBtn().setActionCommand(CatalogoListener.GO_BACK_HOME);
 
     }
 

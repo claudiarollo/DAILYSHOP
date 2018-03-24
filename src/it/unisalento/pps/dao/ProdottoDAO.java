@@ -44,7 +44,7 @@ public class ProdottoDAO {
         String[] riga = risultato.get(0);
         Prodotto p = new Prodotto();
         p.setNome(riga[1]);
-        //p.setFoto(riga[2]);
+        p.setFoto(riga[2]);
         p.setDescrizione(riga[3]);
         p.setPrezzo(riga[4]);
         p.setSconto(riga[5]);

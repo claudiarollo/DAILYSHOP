@@ -15,6 +15,7 @@ public class CatalogoListener implements ActionListener {
     private Frame frame;
 
     public final static String VISUALIZZATUTTI = "Visualizza tutti i nomi dei prodotti";
+    public final static String GO_BACK_HOME = "Torna alla home da catalogo";
 
 
     public CatalogoListener(Frame frame){ this.frame = frame; }
@@ -39,6 +40,13 @@ public class CatalogoListener implements ActionListener {
                 }
                 frame.getCatalogoPanel().getProdottiList().setModel(model);
             }
+        }
+
+
+        if(sorgenteEvento.equals(GO_BACK_HOME)){
+            frame.getNordCatalogoPanel().getNordCatalogoPnl().setVisible(false);
+            frame.getCatalogoPanel().getCatalogoPnl().setVisible(false);
+            frame.getHomePanel().getHomePanel().setVisible(true);
         }
 
 

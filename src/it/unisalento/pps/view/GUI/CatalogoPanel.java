@@ -25,13 +25,16 @@ public class CatalogoPanel {
     private JButton shoppingbagBtn;
     private JLabel numeroProdottiCarrelloLbl;
     private JPanel destraPnl1;
+    private JButton backhomeBtn;
+    private JPanel sinistraPnl1;
 
 
     public CatalogoPanel(){
         catalogoPnl.getUI();
         catalogoPnl.setVisible(true);
         
-        catalogoPnl.setPreferredSize(new Dimension(1000,470));
+        catalogoPnl.setPreferredSize(new Dimension(1100,470));
+        destraPnl.setPreferredSize(new Dimension(400,470));
 
         prodottiList.addListSelectionListener(new listaProdottiListener());
     }
@@ -44,6 +47,7 @@ public class CatalogoPanel {
                 if(e.getSource() == prodottiList) {
 
                     nomeProdottoLbl.setText(null);
+                    prodottoIcon.setIcon(null);
                     descrizioneProdottoLbl.setText(null);
                     prezzoProdottoLbl.setText(null);
                     scontoProdottoLbl.setText(null);
@@ -54,6 +58,7 @@ public class CatalogoPanel {
 
                     ProdottoBusiness pb = new ProdottoBusiness();
                     nomeProdottoLbl.setText(pb.trovaInfoByNomeProdotto(prodottiList.getSelectedValue().toString()).getNome());
+                    prodottoIcon.setIcon(new ImageIcon("./Icons/" + pb.trovaInfoByNomeProdotto(prodottiList.getSelectedValue().toString()).getFoto()));
                     descrizioneProdottoLbl.setText(pb.trovaInfoByNomeProdotto(prodottiList.getSelectedValue().toString()).getDescrizione());
                     prezzoProdottoLbl.setText(pb.trovaInfoByNomeProdotto(prodottiList.getSelectedValue().toString()).getPrezzo());
                     scontoProdottoLbl.setText(pb.trovaInfoByNomeProdotto(prodottiList.getSelectedValue().toString()).getSconto());
@@ -192,5 +197,9 @@ public class CatalogoPanel {
 
     public void setDestraPnl1(JPanel destraPnl1) {
         this.destraPnl1 = destraPnl1;
+    }
+
+    public JButton getBackhomeBtn() {
+        return backhomeBtn;
     }
 }
