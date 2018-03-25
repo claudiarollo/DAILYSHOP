@@ -110,9 +110,22 @@ public class Frame extends JFrame {
 
         nordCatalogoPanel.getVisualizzaTuttiBtn().addActionListener(catalogoListener);
         nordCatalogoPanel.getVisualizzaTuttiBtn().setActionCommand(CatalogoListener.VISUALIZZATUTTI);
+        nordCatalogoPanel.getCategoriaBtn().addActionListener(catalogoListener);
+        nordCatalogoPanel.getCategoriaBtn().setActionCommand(CatalogoListener.PER_CATEGORIA);
+        nordCatalogoPanel.getFasciaPrezzoBtn().addActionListener(catalogoListener);
+        nordCatalogoPanel.getFasciaPrezzoBtn().setActionCommand(CatalogoListener.PER_FASCIA);
+        nordCatalogoPanel.getRepartoBtn().addActionListener(catalogoListener);
+        nordCatalogoPanel.getRepartoBtn().setActionCommand(CatalogoListener.PER_REPARTO);
 
         catalogoPanel.getBackhomeBtn().addActionListener(catalogoListener);
         catalogoPanel.getBackhomeBtn().setActionCommand(CatalogoListener.GO_BACK_HOME);
+
+
+        ComboBoxListener comboBoxListener = new ComboBoxListener(this);
+
+        nordCatalogoPanel.getCategorieCBox().addItemListener(comboBoxListener);
+        nordCatalogoPanel.getRepartiCBox().addItemListener(comboBoxListener);
+        nordCatalogoPanel.getFasceCBox().addItemListener(comboBoxListener);
 
     }
 

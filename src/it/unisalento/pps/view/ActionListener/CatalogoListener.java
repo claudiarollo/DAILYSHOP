@@ -16,6 +16,9 @@ public class CatalogoListener implements ActionListener {
 
     public final static String VISUALIZZATUTTI = "Visualizza tutti i nomi dei prodotti";
     public final static String GO_BACK_HOME = "Torna alla home da catalogo";
+    public final static String PER_CATEGORIA = "Visualizza i prodotti di quella categoria";
+    public final static String PER_FASCIA = "Visualizza i prodotti di quella fascia";
+    public final static String PER_REPARTO = "Visualizza i prodotti di quel reparto";
 
 
     public CatalogoListener(Frame frame){ this.frame = frame; }
@@ -27,6 +30,10 @@ public class CatalogoListener implements ActionListener {
         String sorgenteEvento = e.getActionCommand();
 
         if(sorgenteEvento.equals(VISUALIZZATUTTI)){
+
+            frame.getNordCatalogoPanel().getCategorieCBox().setVisible(false);
+            frame.getNordCatalogoPanel().getFasceCBox().setVisible(false);
+            frame.getNordCatalogoPanel().getRepartiCBox().setVisible(false);
 
             ProdottoBusiness pbusiness = new ProdottoBusiness();
             ArrayList<Prodotto> listaProdotti = pbusiness.elencoNomeProdcts();
@@ -49,6 +56,38 @@ public class CatalogoListener implements ActionListener {
             frame.getHomePanel().getHomePanel().setVisible(true);
         }
 
+
+        if(sorgenteEvento.equals(PER_CATEGORIA)){
+            frame.getNordCatalogoPanel().getCategorieCBox().setVisible(true);
+            frame.getNordCatalogoPanel().getFasceCBox().setVisible(false);
+            frame.getNordCatalogoPanel().getRepartiCBox().setVisible(false);
+
+            DefaultListModel model = new DefaultListModel();
+            frame.getCatalogoPanel().getProdottiList().setModel(model);
+            model.clear();
+        }
+
+
+        if(sorgenteEvento.equals(PER_FASCIA)){
+            frame.getNordCatalogoPanel().getCategorieCBox().setVisible(false);
+            frame.getNordCatalogoPanel().getRepartiCBox().setVisible(false);
+            frame.getNordCatalogoPanel().getFasceCBox().setVisible(true);
+
+            DefaultListModel model = new DefaultListModel();
+            frame.getCatalogoPanel().getProdottiList().setModel(model);
+            model.clear();
+        }
+
+
+        if(sorgenteEvento.equals(PER_REPARTO)){
+            frame.getNordCatalogoPanel().getCategorieCBox().setVisible(false);
+            frame.getNordCatalogoPanel().getFasceCBox().setVisible(false);
+            frame.getNordCatalogoPanel().getRepartiCBox().setVisible(true);
+
+            DefaultListModel model = new DefaultListModel();
+            frame.getCatalogoPanel().getProdottiList().setModel(model);
+            model.clear();
+        }
 
     }
 }

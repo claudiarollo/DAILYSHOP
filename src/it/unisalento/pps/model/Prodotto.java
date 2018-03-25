@@ -115,6 +115,18 @@ public class Prodotto {
     }
 
 
+    public ArrayList<Prodotto> findListByCategoria(String categoria){
+        ProdottoDAO pdao = new ProdottoDAO();
+        return pdao.findElencoByCategoria(categoria);
+    }
+
+
+    public ArrayList<Prodotto> findListByFascia(String fascia){
+        ProdottoDAO pdao = new ProdottoDAO();
+        return pdao.findElencoByFascia(fascia);
+    }
+
+
     // per riempire la scheda prodotto con le info
     public Prodotto findInfo(String nome){
         ProdottoDAO pdao = new ProdottoDAO();

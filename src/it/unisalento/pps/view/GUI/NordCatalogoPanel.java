@@ -1,6 +1,14 @@
 package it.unisalento.pps.view.GUI;
 
+import it.unisalento.pps.business.ProdottoBusiness;
+import it.unisalento.pps.model.Prodotto;
+import it.unisalento.pps.view.Frame;
+
 import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
+import java.util.ArrayList;
 
 public class NordCatalogoPanel {
     private JPanel nordCatalogoPnl;
@@ -18,14 +26,16 @@ public class NordCatalogoPanel {
         nordCatalogoPnl.getUI();
         nordCatalogoPnl.setVisible(true);
 
-        //getCategorieCBox().setVisible(false);
-        //getFasceCBox().setVisible(false);
-        //getRepartiCBox().setVisible(false);
+        nordCatalogoPnl.setPreferredSize(new Dimension(1200,228));
+
+        categorieCBox.setVisible(false);
+        fasceCBox.setVisible(false);
+        repartiCBox.setVisible(false);
 
 
         categorieCBox.addItem("Frutta e Verdura");
         categorieCBox.addItem("Pasta, Riso e Cereali");
-        categorieCBox.addItem("Carne, Salumi e Affettati");
+        categorieCBox.addItem("Carni, Salumi e Affettati");
         categorieCBox.addItem("Pesce");
         categorieCBox.addItem("Formaggi e Latticini vari");
         categorieCBox.addItem("Pane, Uova e Condimenti");
@@ -38,9 +48,7 @@ public class NordCatalogoPanel {
         fasceCBox.addItem("€€€ - Fascia Alta");
 
 
-        repartiCBox.addItem("Gluten Free");
-        repartiCBox.addItem("Vegan");
-        repartiCBox.addItem("Bio");
+        repartiCBox.addItem("Ortofrutta");
         repartiCBox.addItem("Gastronomia");
         repartiCBox.addItem("Pescheria");
         repartiCBox.addItem("Macelleria");
@@ -68,9 +76,7 @@ public class NordCatalogoPanel {
         return fasciaPrezzoBtn;
     }
 
-    public JButton getRepartoBtn() {
-        return repartoBtn;
-    }
+    public JButton getRepartoBtn() { return repartoBtn; }
 
     public JComboBox getCategorieCBox() {
         return categorieCBox;

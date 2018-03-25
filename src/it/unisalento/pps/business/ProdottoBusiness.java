@@ -18,8 +18,23 @@ public class ProdottoBusiness {
 
     // per riempire la JList del catalogo con il nome dei prodotti
     public ArrayList<Prodotto> elencoNomeProdcts() {
-        Prodotto prodotto = new Prodotto();
-        ArrayList<Prodotto> ris = prodotto.elencoNomeProducts();
+        Prodotto p = new Prodotto();
+        ArrayList<Prodotto> ris = p.elencoNomeProducts();
+        return ris;
+    }
+
+
+    // trova la lista con nomi dei prodotti per categoria
+    public ArrayList<Prodotto> trovaListaByCategoria(String categoria){
+        Prodotto p = new Prodotto();
+        ArrayList<Prodotto> ris = p.findListByCategoria(categoria);
+        return ris;
+    }
+
+
+    public ArrayList<Prodotto> trovaListaByFascia(String fascia){
+        Prodotto p = new Prodotto();
+        ArrayList<Prodotto> ris = p.findListByFascia(fascia);
         return ris;
     }
 

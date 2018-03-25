@@ -33,8 +33,8 @@ public class CatalogoPanel {
         catalogoPnl.getUI();
         catalogoPnl.setVisible(true);
         
-        catalogoPnl.setPreferredSize(new Dimension(1100,470));
-        destraPnl.setPreferredSize(new Dimension(400,470));
+        catalogoPnl.setPreferredSize(new Dimension(1100,465));
+        destraPnl.setPreferredSize(new Dimension(400,465));
 
         prodottiList.addListSelectionListener(new listaProdottiListener());
     }
@@ -119,9 +119,7 @@ public class CatalogoPanel {
         return aggiungiAlCarrelloBtn;
     }
 
-    public void setAggiungiAlCarrelloBtn(JButton aggiungiAlCarrelloBtn) {
-        this.aggiungiAlCarrelloBtn = aggiungiAlCarrelloBtn;
-    }
+    public void setAggiungiAlCarrelloBtn(JButton aggiungiAlCarrelloBtn) { this.aggiungiAlCarrelloBtn = aggiungiAlCarrelloBtn; }
 
     public JLabel getNomeProdottoLbl() {
         return nomeProdottoLbl;
@@ -135,9 +133,7 @@ public class CatalogoPanel {
         return descrizioneProdottoLbl;
     }
 
-    public void setDescrizioneProdottoLbl(JLabel descrizioneProdottoLbl) {
-        this.descrizioneProdottoLbl = descrizioneProdottoLbl;
-    }
+    public void setDescrizioneProdottoLbl(JLabel descrizioneProdottoLbl) { this.descrizioneProdottoLbl = descrizioneProdottoLbl; }
 
     public JLabel getPrezzoProdottoLbl() {
         return prezzoProdottoLbl;
@@ -159,17 +155,13 @@ public class CatalogoPanel {
         return produttoreProdottoLbl;
     }
 
-    public void setProduttoreProdottoLbl(JLabel produttoreProdottoLbl) {
-        this.produttoreProdottoLbl = produttoreProdottoLbl;
-    }
+    public void setProduttoreProdottoLbl(JLabel produttoreProdottoLbl) { this.produttoreProdottoLbl = produttoreProdottoLbl; }
 
     public JLabel getDistributoreProdottoLbl() {
         return distributoreProdottoLbl;
     }
 
-    public void setDistributoreProdottoLbl(JLabel distributoreProdottoLbl) {
-        this.distributoreProdottoLbl = distributoreProdottoLbl;
-    }
+    public void setDistributoreProdottoLbl(JLabel distributoreProdottoLbl) { this.distributoreProdottoLbl = distributoreProdottoLbl; }
 
     public void setVediInfoProdottoBtn(JButton vediInfoProdottoBtn) {
         this.vediInfoProdottoBtn = vediInfoProdottoBtn;
@@ -187,9 +179,7 @@ public class CatalogoPanel {
         return numeroProdottiCarrelloLbl;
     }
 
-    public void setNumeroProdottiCarrelloLbl(JLabel numeroProdottiCarrelloLbl) {
-        this.numeroProdottiCarrelloLbl = numeroProdottiCarrelloLbl;
-    }
+    public void setNumeroProdottiCarrelloLbl(JLabel numeroProdottiCarrelloLbl) { this.numeroProdottiCarrelloLbl = numeroProdottiCarrelloLbl; }
 
     public JPanel getDestraPnl1() {
         return destraPnl1;

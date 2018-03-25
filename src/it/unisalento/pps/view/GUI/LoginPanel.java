@@ -1,6 +1,7 @@
 package it.unisalento.pps.view.GUI;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class LoginPanel {
     private JPanel loginPanel;
