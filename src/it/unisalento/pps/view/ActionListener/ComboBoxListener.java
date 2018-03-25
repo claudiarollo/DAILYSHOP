@@ -26,12 +26,18 @@ public class ComboBoxListener implements ItemListener {
             ArrayList<Prodotto> listaPerCategoria = pb.trovaListaByCategoria(frame.getNordCatalogoPanel().getCategorieCBox().getSelectedItem().toString());
             if (listaPerCategoria.size() == 0) {
                 JOptionPane.showMessageDialog(null, "Non ci sono prodotti che fanno parte di questa categoria. Siamo spiacenti...");
-            } else {
+
+                DefaultListModel model = new DefaultListModel();
+                frame.getCatalogoPanel().getProdottiList().setModel(model);
+                model.clear();
+            }
+            else {
                 DefaultListModel model = new DefaultListModel();
                 for (int i = 0; i < listaPerCategoria.size(); i++) {
                     model.addElement(listaPerCategoria.get(i).getNome().toString());
                 }
                 frame.getCatalogoPanel().getProdottiList().setModel(model);
+                frame.getCatalogoPanel().getProdottiList().setSelectedIndex(0);
             }
         }
 
@@ -42,6 +48,10 @@ public class ComboBoxListener implements ItemListener {
             ArrayList<Prodotto> listaPerFascia = pb.trovaListaByFascia(frame.getNordCatalogoPanel().getFasceCBox().getSelectedItem().toString());
             if(listaPerFascia.size()==0) {
                 JOptionPane.showMessageDialog(null, "Non ci sono prodotti che fanno parte di questa fascia. Siamo spiacenti...");
+
+                DefaultListModel model = new DefaultListModel();
+                frame.getCatalogoPanel().getProdottiList().setModel(model);
+                model.clear();
             }
             else {
                 DefaultListModel model = new DefaultListModel();
@@ -49,11 +59,12 @@ public class ComboBoxListener implements ItemListener {
                     model.addElement(listaPerFascia.get(i).getNome().toString());
                 }
                 frame.getCatalogoPanel().getProdottiList().setModel(model);
+                frame.getCatalogoPanel().getProdottiList().setSelectedIndex(0);
             }
         }
 
 
-        
+
 
     }
 }

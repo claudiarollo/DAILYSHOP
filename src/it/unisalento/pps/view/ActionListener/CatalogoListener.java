@@ -46,6 +46,8 @@ public class CatalogoListener implements ActionListener {
                     model.addElement(listaProdotti.get(i).getNome().toString());
                 }
                 frame.getCatalogoPanel().getProdottiList().setModel(model);
+
+                frame.getCatalogoPanel().getProdottiList().setSelectedIndex(0);
             }
         }
 
@@ -54,6 +56,13 @@ public class CatalogoListener implements ActionListener {
             frame.getNordCatalogoPanel().getNordCatalogoPnl().setVisible(false);
             frame.getCatalogoPanel().getCatalogoPnl().setVisible(false);
             frame.getHomePanel().getHomePanel().setVisible(true);
+            frame.getNordCatalogoPanel().getCategorieCBox().setVisible(false);
+            frame.getNordCatalogoPanel().getRepartiCBox().setVisible(false);
+            frame.getNordCatalogoPanel().getFasceCBox().setVisible(false);
+
+            DefaultListModel model = new DefaultListModel();
+            frame.getCatalogoPanel().getProdottiList().setModel(model);
+            model.clear();
         }
 
 
