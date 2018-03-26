@@ -71,9 +71,16 @@ public class CatalogoListener implements ActionListener {
             frame.getNordCatalogoPanel().getFasceCBox().setVisible(false);
             frame.getNordCatalogoPanel().getRepartiCBox().setVisible(false);
 
+            ProdottoBusiness pb = new ProdottoBusiness();
+            ArrayList<Prodotto> listaPerCategoria = pb.trovaListaByCategoria("Frutta e Verdura");
             DefaultListModel model = new DefaultListModel();
+            for (int i = 0; i < listaPerCategoria.size(); i++) {
+                model.addElement(listaPerCategoria.get(i).getNome().toString());
+            }
             frame.getCatalogoPanel().getProdottiList().setModel(model);
-            model.clear();
+            frame.getCatalogoPanel().getProdottiList().setSelectedIndex(0);
+
+            frame.getNordCatalogoPanel().getCategorieCBox().setSelectedItem("Frutta e Verdura");
         }
 
 
@@ -82,9 +89,16 @@ public class CatalogoListener implements ActionListener {
             frame.getNordCatalogoPanel().getRepartiCBox().setVisible(false);
             frame.getNordCatalogoPanel().getFasceCBox().setVisible(true);
 
+            ProdottoBusiness pb = new ProdottoBusiness();
+            ArrayList<Prodotto> listaPerFascia = pb.trovaListaByFascia("€ - Fascia Bassa");
             DefaultListModel model = new DefaultListModel();
+            for (int i = 0; i < listaPerFascia.size(); i++) {
+                model.addElement(listaPerFascia.get(i).getNome().toString());
+            }
             frame.getCatalogoPanel().getProdottiList().setModel(model);
-            model.clear();
+            frame.getCatalogoPanel().getProdottiList().setSelectedIndex(0);
+
+            frame.getNordCatalogoPanel().getFasceCBox().setSelectedItem("€ - Fascia Bassa");
         }
 
 
@@ -93,9 +107,16 @@ public class CatalogoListener implements ActionListener {
             frame.getNordCatalogoPanel().getFasceCBox().setVisible(false);
             frame.getNordCatalogoPanel().getRepartiCBox().setVisible(true);
 
+            ProdottoBusiness pb = new ProdottoBusiness();
+            ArrayList<Prodotto> listaPerReparto = pb.trovaListaByReparto("Ortofrutta");
             DefaultListModel model = new DefaultListModel();
+            for (int i = 0; i < listaPerReparto.size(); i++) {
+                model.addElement(listaPerReparto.get(i).getNome().toString());
+            }
             frame.getCatalogoPanel().getProdottiList().setModel(model);
-            model.clear();
+            frame.getCatalogoPanel().getProdottiList().setSelectedIndex(0);
+
+            frame.getNordCatalogoPanel().getRepartiCBox().setSelectedItem("Ortofrutta");
         }
 
     }

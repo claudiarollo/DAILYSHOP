@@ -64,7 +64,26 @@ public class ComboBoxListener implements ItemListener {
         }
 
 
+        if(frame.getNordCatalogoPanel().getRepartiCBox().isPopupVisible()){
 
+            ProdottoBusiness pb = new ProdottoBusiness();
+            ArrayList<Prodotto> listaPerReparto = pb.trovaListaByReparto(frame.getNordCatalogoPanel().getRepartiCBox().getSelectedItem().toString());
+            if(listaPerReparto.size()==0) {
+                JOptionPane.showMessageDialog(null, "Non ci sono prodotti che fanno parte di questo reparto. Siamo spiacenti...");
+
+                DefaultListModel model = new DefaultListModel();
+                frame.getCatalogoPanel().getProdottiList().setModel(model);
+                model.clear();
+            }
+            else {
+                DefaultListModel model = new DefaultListModel();
+                for (int i = 0; i < listaPerReparto.size(); i++) {
+                    model.addElement(listaPerReparto.get(i).getNome().toString());
+                }
+                frame.getCatalogoPanel().getProdottiList().setModel(model);
+                frame.getCatalogoPanel().getProdottiList().setSelectedIndex(0);
+            }
+        }
 
     }
 }

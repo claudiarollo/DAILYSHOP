@@ -27,14 +27,15 @@ public class CatalogoPanel {
     private JPanel destraPnl1;
     private JButton backhomeBtn;
     private JPanel sinistraPnl1;
+    private JButton creaIlTuoPaniereButton;
 
 
     public CatalogoPanel(){
         catalogoPnl.getUI();
         catalogoPnl.setVisible(true);
         
-        catalogoPnl.setPreferredSize(new Dimension(1100,465));
-        destraPnl.setPreferredSize(new Dimension(400,465));
+        catalogoPnl.setPreferredSize(new Dimension(1150,465));
+        destraPnl.setPreferredSize(new Dimension(410,465));
 
         prodottiList.addListSelectionListener(new listaProdottiListener());
     }

@@ -127,6 +127,12 @@ public class Prodotto {
     }
 
 
+    public ArrayList<Prodotto> findListByReparto(String reparto){
+        ProdottoDAO pdao = new ProdottoDAO();
+        return  pdao.findElencoByReparto(reparto);
+    }
+
+
     // per riempire la scheda prodotto con le info
     public Prodotto findInfo(String nome){
         ProdottoDAO pdao = new ProdottoDAO();

@@ -2,25 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1830035a-9ca7-431b-90e9-58e2018e9d6a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Icons/pollo-arrosto.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Icons/bag.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Icons/paniereicon.png" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Icons/avocado_img.png" afterPath="$PROJECT_DIR$/Icons/avocado.png" />
-      <change beforePath="$PROJECT_DIR$/Icons/carne-trita_img.png" afterPath="$PROJECT_DIR$/Icons/carne-trita.png" />
-      <change beforePath="$PROJECT_DIR$/Icons/mela_img.png" afterPath="$PROJECT_DIR$/Icons/mela.png" />
+      <change beforePath="$PROJECT_DIR$/Icons/avocado_img.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Icons/carne-trita_img.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Icons/mela_img.png" afterPath="" />
       <change beforePath="$PROJECT_DIR$/Icons/pollo-spiedo_img.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Icons/prosciutto-cotto_png.png" afterPath="$PROJECT_DIR$/Icons/prosciutto-cotto.png" />
-      <change beforePath="$PROJECT_DIR$/Icons/salmone-affumicato_img.png" afterPath="$PROJECT_DIR$/Icons/salmone-affumicato.png" />
+      <change beforePath="$PROJECT_DIR$/Icons/prosciutto-cotto_png.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Icons/salmone-affumicato_img.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Icons/shoppingbag.png" afterPath="" />
       <change beforePath="$PROJECT_DIR$/out/production/DAILYSHOP/it/unisalento/pps/view/GUI/AmministratoreFrame.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/out/production/DAILYSHOP/it/unisalento/pps/view/GUI/GestisciNuoviUtentiFrame.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/out/production/DAILYSHOP/it/unisalento/pps/view/GUI/LoginFrame$1.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/out/production/DAILYSHOP/it/unisalento/pps/view/GUI/LoginFrame.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/out/production/DAILYSHOP/it/unisalento/pps/view/GUI/RegistrazioneFrame$1.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/out/production/DAILYSHOP/it/unisalento/pps/view/GUI/RegistrazioneFrame.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/it/unisalento/pps/business/ProdottoBusiness.java" afterPath="$PROJECT_DIR$/src/it/unisalento/pps/business/ProdottoBusiness.java" />
+      <change beforePath="$PROJECT_DIR$/src/it/unisalento/pps/dao/ProdottoDAO.java" afterPath="$PROJECT_DIR$/src/it/unisalento/pps/dao/ProdottoDAO.java" />
+      <change beforePath="$PROJECT_DIR$/src/it/unisalento/pps/model/Prodotto.java" afterPath="$PROJECT_DIR$/src/it/unisalento/pps/model/Prodotto.java" />
       <change beforePath="$PROJECT_DIR$/src/it/unisalento/pps/view/ActionListener/CatalogoListener.java" afterPath="$PROJECT_DIR$/src/it/unisalento/pps/view/ActionListener/CatalogoListener.java" />
       <change beforePath="$PROJECT_DIR$/src/it/unisalento/pps/view/ActionListener/ComboBoxListener.java" afterPath="$PROJECT_DIR$/src/it/unisalento/pps/view/ActionListener/ComboBoxListener.java" />
-      <change beforePath="$PROJECT_DIR$/src/it/unisalento/pps/view/ActionListener/HomeListener.java" afterPath="$PROJECT_DIR$/src/it/unisalento/pps/view/ActionListener/HomeListener.java" />
-      <change beforePath="$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/AmministratorePanel.form" afterPath="$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/AmministratorePanel.form" />
-      <change beforePath="$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/GestisciNuoviUtentiPanel.form" afterPath="$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/GestisciNuoviUtentiPanel.form" />
+      <change beforePath="$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/CatalogoPanel.form" afterPath="$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/CatalogoPanel.form" />
+      <change beforePath="$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/CatalogoPanel.java" afterPath="$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/CatalogoPanel.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,7 +51,7 @@
       <file leaf-file-name="Frame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/view/Frame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1875">
+            <state relative-caret-position="1815">
               <caret line="125" column="79" lean-forward="false" selection-start-line="125" selection-start-column="79" selection-end-line="125" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -73,8 +77,8 @@
       <file leaf-file-name="ProdottoDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/dao/ProdottoDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="66" column="29" lean-forward="false" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
+            <state relative-caret-position="1170">
+              <caret line="82" column="29" lean-forward="false" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,8 +89,8 @@
       <file leaf-file-name="Prodotto.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/model/Prodotto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1875">
-              <caret line="125" column="47" lean-forward="false" selection-start-line="125" selection-start-column="47" selection-end-line="125" selection-end-column="47" />
+            <state relative-caret-position="1275">
+              <caret line="131" column="50" lean-forward="false" selection-start-line="131" selection-start-column="50" selection-end-line="131" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#389#390#0" expanded="true" />
@@ -138,47 +142,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProdottoBusiness.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ProdottoBusiness.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/business/ProdottoBusiness.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="19" lean-forward="false" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NordCatalogoPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/NordCatalogoPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="50" column="39" lean-forward="false" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CatalogoListener.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/view/ActionListener/CatalogoListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-46">
-              <caret line="60" column="74" lean-forward="false" selection-start-line="60" selection-start-column="74" selection-end-line="60" selection-end-column="74" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ComboBoxListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/view/ActionListener/ComboBoxListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="39" column="79" lean-forward="false" selection-start-line="39" selection-start-column="79" selection-end-line="39" selection-end-column="79" />
+            <state relative-caret-position="630">
+              <caret line="44" column="19" lean-forward="false" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -221,22 +189,22 @@
         <option value="$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/RegistrazionePanel.java" />
         <option value="$PROJECT_DIR$/src/it/unisalento/pps/view/ActionListener/LoginListener.java" />
         <option value="$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/HomePanel.java" />
-        <option value="$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/CatalogoPanel.form" />
         <option value="$PROJECT_DIR$/src/it/unisalento/pps/view/ActionListener/RegistrazioneListener.java" />
         <option value="$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/NordCatalogoPanel.form" />
-        <option value="$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/CatalogoPanel.java" />
         <option value="$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/LoginPanel.form" />
         <option value="$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/LoginPanel.java" />
         <option value="$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/NordCatalogoPanel.java" />
         <option value="$PROJECT_DIR$/src/it/unisalento/pps/view/Frame.java" />
-        <option value="$PROJECT_DIR$/src/it/unisalento/pps/dao/ProdottoDAO.java" />
-        <option value="$PROJECT_DIR$/src/it/unisalento/pps/model/Prodotto.java" />
-        <option value="$PROJECT_DIR$/src/it/unisalento/pps/business/ProdottoBusiness.java" />
         <option value="$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/AmministratorePanel.form" />
         <option value="$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/GestisciNuoviUtentiPanel.form" />
         <option value="$PROJECT_DIR$/src/it/unisalento/pps/view/ActionListener/HomeListener.java" />
+        <option value="$PROJECT_DIR$/src/it/unisalento/pps/dao/ProdottoDAO.java" />
+        <option value="$PROJECT_DIR$/src/it/unisalento/pps/model/Prodotto.java" />
+        <option value="$PROJECT_DIR$/src/it/unisalento/pps/business/ProdottoBusiness.java" />
         <option value="$PROJECT_DIR$/src/it/unisalento/pps/view/ActionListener/ComboBoxListener.java" />
         <option value="$PROJECT_DIR$/src/it/unisalento/pps/view/ActionListener/CatalogoListener.java" />
+        <option value="$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/CatalogoPanel.java" />
+        <option value="$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/CatalogoPanel.form" />
       </list>
     </option>
   </component>
@@ -263,20 +231,16 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="DAILYSHOP" type="b2602c69:ProjectViewProjectNode" />
               <item name="DAILYSHOP" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DAILYSHOP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DAILYSHOP" type="462c0819:PsiDirectoryNode" />
-              <item name="Icons" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DAILYSHOP" type="b2602c69:ProjectViewProjectNode" />
@@ -360,11 +324,21 @@
               <item name="view" type="462c0819:PsiDirectoryNode" />
               <item name="GUI" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="DAILYSHOP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DAILYSHOP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="it" type="462c0819:PsiDirectoryNode" />
+              <item name="unisalento" type="462c0819:PsiDirectoryNode" />
+              <item name="pps" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="CatalogoPanel" type="e9f4de52:FormNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -519,7 +493,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -529,18 +502,18 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19246861" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25069445" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25069445" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -784,19 +757,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/CatalogoPanel.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/CatalogoPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="35" column="59" lean-forward="false" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/LoginPanel.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
@@ -814,7 +774,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/view/Frame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1875">
+        <state relative-caret-position="1815">
           <caret line="125" column="79" lean-forward="false" selection-start-line="125" selection-start-column="79" selection-end-line="125" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -836,10 +796,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/AmministratorePanel.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/GestisciNuoviUtentiPanel.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Icons/mela.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/view/ActionListener/HomeListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="55" column="79" lean-forward="false" selection-start-line="55" selection-start-column="79" selection-end-line="55" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/NordCatalogoPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="50" column="42" lean-forward="true" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/dao/ProdottoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="82" column="29" lean-forward="false" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/model/Prodotto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1875">
-          <caret line="125" column="47" lean-forward="false" selection-start-line="125" selection-start-column="47" selection-end-line="125" selection-end-column="47" />
+        <state relative-caret-position="1275">
+          <caret line="131" column="50" lean-forward="false" selection-start-line="131" selection-start-column="50" selection-end-line="131" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#389#390#0" expanded="true" />
@@ -890,63 +893,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/dao/ProdottoDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="66" column="29" lean-forward="false" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/business/ProdottoBusiness.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="19" lean-forward="false" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/AmministratorePanel.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/GestisciNuoviUtentiPanel.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Icons/mela.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/view/ActionListener/HomeListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="55" column="79" lean-forward="false" selection-start-line="55" selection-start-column="79" selection-end-line="55" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/view/ActionListener/ComboBoxListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="39" column="79" lean-forward="false" selection-start-line="39" selection-start-column="79" selection-end-line="39" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/NordCatalogoPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="50" column="39" lean-forward="false" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+        <state relative-caret-position="238">
+          <caret line="30" column="75" lean-forward="true" selection-start-line="30" selection-start-column="75" selection-end-line="30" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -955,8 +905,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/view/ActionListener/CatalogoListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-46">
-          <caret line="60" column="74" lean-forward="false" selection-start-line="60" selection-start-column="74" selection-end-line="60" selection-end-column="74" />
+        <state relative-caret-position="701">
+          <caret line="110" column="73" lean-forward="false" selection-start-line="110" selection-start-column="73" selection-end-line="110" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/CatalogoPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="37" column="51" lean-forward="false" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/view/GUI/CatalogoPanel.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/unisalento/pps/business/ProdottoBusiness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="44" column="19" lean-forward="false" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

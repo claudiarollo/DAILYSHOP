@@ -39,6 +39,13 @@ public class ProdottoBusiness {
     }
 
 
+    public ArrayList<Prodotto> trovaListaByReparto(String reparto){
+        Prodotto p = new Prodotto();
+        ArrayList<Prodotto> ris = p.findListByReparto(reparto);
+        return ris;
+    }
+
+
     // per riempire la scheda prodotto con le info
     public Prodotto trovaInfoByNomeProdotto(String nome){
         Prodotto p = new Prodotto();

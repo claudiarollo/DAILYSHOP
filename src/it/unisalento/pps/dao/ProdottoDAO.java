@@ -68,6 +68,22 @@ public class ProdottoDAO {
     }
 
 
+    public ArrayList<Prodotto> findElencoByReparto(String reparto){
+        String sql3 = "SELECT nome FROM prodotto WHERE reparto='"+reparto+"'";
+        ArrayList<String[]> ris = DbConnection.getInstance().eseguiQuery(sql3);
+
+        ArrayList<Prodotto> listaprodotti = new ArrayList<>();
+        Iterator<String[]> i = ris.iterator();
+        while (i.hasNext()) {
+            String riga[] = i.next();
+            Prodotto p = new Prodotto();
+            p.setNome(riga[0]);
+            listaprodotti.add(p);
+        }
+        return listaprodotti;
+    }
+
+
     // per riempire la scheda prodotto con le info
     public Prodotto findInfoByNomeProdotto(String nome){
         String sql = "SELECT * FROM prodotto WHERE nome='"+nome+"'";
