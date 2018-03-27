@@ -133,6 +133,13 @@ public class Prodotto {
     }
 
 
+    // per aggiungere prodotto al catalogo
+    public boolean aggiungiProdotto(Prodotto prodotto){
+        ProdottoDAO pdao = new ProdottoDAO();
+        return pdao.aggiungiProdotto(prodotto);
+    }
+
+
     // per riempire la scheda prodotto con le info
     public Prodotto findInfo(String nome){
         ProdottoDAO pdao = new ProdottoDAO();

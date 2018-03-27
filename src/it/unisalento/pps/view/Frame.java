@@ -17,6 +17,7 @@ public class Frame extends JFrame {
     HomePanel homePanel = new HomePanel();
     NordCatalogoPanel nordCatalogoPanel = new NordCatalogoPanel();
     CatalogoPanel catalogoPanel = new CatalogoPanel();
+    GestorePanel gestorePanel = new GestorePanel();
 
 
 
@@ -48,6 +49,7 @@ public class Frame extends JFrame {
             centroPnl.add(amministratorePanel.getAmministratorePanel());
             centroPnl.add(gestisciNuoviUtentiPanel.getGestisciNuoviUtentiPanel());
             centroPnl.add(catalogoPanel.getCatalogoPnl());
+            centroPnl.add(gestorePanel.getGestorePanel());
 
 
         view.setContentPane(rootPnl);
@@ -127,6 +129,12 @@ public class Frame extends JFrame {
         nordCatalogoPanel.getRepartiCBox().addItemListener(comboBoxListener);
         nordCatalogoPanel.getFasceCBox().addItemListener(comboBoxListener);
 
+
+        GestoreListener gestoreListener = new GestoreListener(this);
+
+        getGestorePanel().getAggiungiProdottoBtn().addActionListener(gestoreListener);
+        getGestorePanel().getAggiungiProdottoBtn().setActionCommand(GestoreListener.AGGIUNGI_PRODOTTO);
+
     }
 
 
@@ -156,5 +164,9 @@ public class Frame extends JFrame {
 
     public CatalogoPanel getCatalogoPanel() {
         return catalogoPanel;
+    }
+
+    public GestorePanel getGestorePanel() {
+        return gestorePanel;
     }
 }

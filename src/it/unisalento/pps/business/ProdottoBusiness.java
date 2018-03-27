@@ -46,6 +46,27 @@ public class ProdottoBusiness {
     }
 
 
+    // per aggiungere un prodotto al catalogo
+
+    public boolean addProdotto(String nome, String foto, String descrizione, String prezzo, String sconto, String produttore, String distributore,
+                               String categoria, String fascia, String reparto){
+        Prodotto p = new Prodotto();
+        p.setNome(nome);
+        p.setFoto(foto);
+        p.setDescrizione(descrizione);
+        p.setPrezzo(prezzo);
+        p.setSconto(sconto);
+        p.setProduttore(produttore);
+        p.setDistributore(distributore);
+        p.setCategoria(categoria);
+        p.setFascia(fascia);
+        p.setReparto(reparto);
+        p.aggiungiProdotto(p);
+        return true;
+    }
+
+
+
     // per riempire la scheda prodotto con le info
     public Prodotto trovaInfoByNomeProdotto(String nome){
         Prodotto p = new Prodotto();

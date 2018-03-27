@@ -84,6 +84,20 @@ public class ProdottoDAO {
     }
 
 
+    // per aggiungere un prodotto al catalogo
+
+    public boolean aggiungiProdotto(Prodotto prodotto){
+
+        ArrayList<String[]> esito = DbConnection.getInstance().eseguiQuery("SELECT * FROM prodotto WHERE nome='"+prodotto.getNome()+"'");
+        if(esito.size()>=1) return false;
+
+        String sql = "INSERT INTO prodotto (nome,foto,descrizione,prezzo,sconto,produttore,distributore,categoria,fascia,reparto) VALUES" +
+                "('"+prodotto.getNome()+"','"+prodotto.getFoto()+"','"+prodotto.getDescrizione()+"','"+prodotto.getPrezzo()+"','"+prodotto.getSconto()+"'," +
+                "'"+prodotto.getProduttore()+"','"+prodotto.getDistributore()+"','"+prodotto.getCategoria()+"','"+prodotto.getFascia()+"','"+prodotto.getReparto()+"')";
+        return DbConnection.getInstance().eseguiAggiornamento(sql);
+    }
+
+
     // per riempire la scheda prodotto con le info
     public Prodotto findInfoByNomeProdotto(String nome){
         String sql = "SELECT * FROM prodotto WHERE nome='"+nome+"'";
