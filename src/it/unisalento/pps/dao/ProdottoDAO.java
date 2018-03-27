@@ -84,7 +84,7 @@ public class ProdottoDAO {
     }
 
 
-    // per aggiungere un prodotto al catalogo
+    // per aggiungere un prodotto al catalogo da gestore
 
     public boolean aggiungiProdotto(Prodotto prodotto){
 
@@ -94,6 +94,14 @@ public class ProdottoDAO {
         String sql = "INSERT INTO prodotto (nome,foto,descrizione,prezzo,sconto,produttore,distributore,categoria,fascia,reparto) VALUES" +
                 "('"+prodotto.getNome()+"','"+prodotto.getFoto()+"','"+prodotto.getDescrizione()+"','"+prodotto.getPrezzo()+"','"+prodotto.getSconto()+"'," +
                 "'"+prodotto.getProduttore()+"','"+prodotto.getDistributore()+"','"+prodotto.getCategoria()+"','"+prodotto.getFascia()+"','"+prodotto.getReparto()+"')";
+        return DbConnection.getInstance().eseguiAggiornamento(sql);
+    }
+
+
+    // per eliminare un prodotto del catalogo da gestore
+
+    public boolean eliminaProdotto(String nome){
+        String sql = "DELETE FROM prodotto WHERE nome='"+nome+"'";
         return DbConnection.getInstance().eseguiAggiornamento(sql);
     }
 

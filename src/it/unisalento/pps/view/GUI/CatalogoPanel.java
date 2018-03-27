@@ -32,7 +32,7 @@ public class CatalogoPanel {
 
     public CatalogoPanel(){
         catalogoPnl.getUI();
-        catalogoPnl.setVisible(false);
+        catalogoPnl.setVisible(true);
         
         catalogoPnl.setPreferredSize(new Dimension(1150,465));
         destraPnl.setPreferredSize(new Dimension(410,465));

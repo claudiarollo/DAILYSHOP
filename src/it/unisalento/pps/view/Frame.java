@@ -1,5 +1,6 @@
 package it.unisalento.pps.view;
 
+import it.unisalento.pps.business.GestoreBusiness;
 import it.unisalento.pps.view.ActionListener.*;
 import it.unisalento.pps.view.GUI.*;
 
@@ -134,6 +135,12 @@ public class Frame extends JFrame {
 
         getGestorePanel().getAggiungiProdottoBtn().addActionListener(gestoreListener);
         getGestorePanel().getAggiungiProdottoBtn().setActionCommand(GestoreListener.AGGIUNGI_PRODOTTO);
+        getGestorePanel().getEliminaProdottoBtn().addActionListener(gestoreListener);
+        getGestorePanel().getEliminaProdottoBtn().setActionCommand(GestoreListener.ELIMINA_PRODOTTO);
+        getGestorePanel().getRefreshBtn().addActionListener(gestoreListener);
+        getGestorePanel().getRefreshBtn().setActionCommand(GestoreListener.REFRESH_BTN);
+        getGestorePanel().getLogoutBtn().addActionListener(gestoreListener);
+        getGestorePanel().getLogoutBtn().setActionCommand(GestoreListener.LOGOUT);
 
     }
 

@@ -1,11 +1,14 @@
 package it.unisalento.pps.view.ActionListener;
 
 import it.unisalento.pps.business.LoginBusiness;
+import it.unisalento.pps.business.ProdottoBusiness;
+import it.unisalento.pps.model.Prodotto;
 import it.unisalento.pps.view.Frame;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 public class LoginListener implements ActionListener {
 
@@ -54,8 +57,17 @@ public class LoginListener implements ActionListener {
                         else if (ruolo.equals("gestore")) {
                             JOptionPane.showMessageDialog(null, "Gestore loggato con successo");
                             frame.getLoginPanel().getLoginPanel().setVisible(false);
+                            frame.getGestorePanel().getGestorePanel().setVisible(true);
                             frame.getLoginPanel().getUsernameTxt().setText(null);
                             frame.getLoginPanel().getPasswordTxt().setText(null);
+
+                            ProdottoBusiness pbusiness = new ProdottoBusiness();
+                            ArrayList<Prodotto> listaProdotti = pbusiness.elencoNomeProdcts();
+                            DefaultListModel model = new DefaultListModel();
+                            for (int i = 0; i < listaProdotti.size(); i++) {
+                                model.addElement(listaProdotti.get(i).getNome().toString());
+                            }
+                            frame.getGestorePanel().getProdottiList().setModel(model);
                         }
                     }
                     else {

@@ -20,12 +20,17 @@ public class GestorePanel {
     private JTextField produttoreTxt;
     private JTextField distributoreTxt;
     private JButton aggiungiProdottoBtn;
+    private JPanel southPnl;
+    private JButton logoutBtn;
+    private JList prodottiList;
+    private JButton eliminaProdottoBtn;
+    private JButton refreshBtn;
     private JPanel cancellaProdottoPnl;
 
 
     public GestorePanel(){
         gestorePanel.getUI();
-        gestorePanel.setVisible(true);
+        gestorePanel.setVisible(false);
 
         gestorePanel.setPreferredSize(new Dimension(900, 650));
 
@@ -119,5 +124,25 @@ public class GestorePanel {
 
     public JButton getAggiungiProdottoBtn() {
         return aggiungiProdottoBtn;
+    }
+
+    public JPanel getSouthPnl() {
+        return southPnl;
+    }
+
+    public JButton getLogoutBtn() {
+        return logoutBtn;
+    }
+
+    public JList getProdottiList() {
+        return prodottiList;
+    }
+
+    public JButton getEliminaProdottoBtn() {
+        return eliminaProdottoBtn;
+    }
+
+    public JButton getRefreshBtn() {
+        return refreshBtn;
     }
 }

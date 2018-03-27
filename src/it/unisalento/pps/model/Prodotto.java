@@ -133,10 +133,16 @@ public class Prodotto {
     }
 
 
-    // per aggiungere prodotto al catalogo
+    // per aggiungere prodotto al catalogo da gestore
     public boolean aggiungiProdotto(Prodotto prodotto){
         ProdottoDAO pdao = new ProdottoDAO();
         return pdao.aggiungiProdotto(prodotto);
+    }
+
+
+    public boolean eliminaProdotto(String nome){
+        ProdottoDAO pdao = new ProdottoDAO();
+        return pdao.eliminaProdotto(nome);
     }
 
 

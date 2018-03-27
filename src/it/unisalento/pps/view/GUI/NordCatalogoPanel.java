@@ -24,7 +24,7 @@ public class NordCatalogoPanel {
 
     public NordCatalogoPanel(){
         nordCatalogoPnl.getUI();
-        nordCatalogoPnl.setVisible(false);
+        nordCatalogoPnl.setVisible(true);
 
         nordCatalogoPnl.setPreferredSize(new Dimension(1200,228));
 

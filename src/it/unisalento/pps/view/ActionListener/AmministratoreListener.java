@@ -133,7 +133,7 @@ public class AmministratoreListener implements ActionListener {
 
 
         if(sorgenteEvento.equals(LOGOUT)){
-            int dialogresult = JOptionPane.showConfirmDialog(null, "Sicuro di voler effettuare il logout?");
+            int dialogresult = JOptionPane.showConfirmDialog(null, "Sei sicuro di voler effettuare il logout?");
 
             if (dialogresult == JOptionPane.YES_OPTION) {
                 frame.getAmministratorePanel().getAmministratorePanel().setVisible(false);
