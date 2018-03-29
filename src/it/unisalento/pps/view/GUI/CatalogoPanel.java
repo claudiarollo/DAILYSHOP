@@ -82,6 +82,7 @@ public class CatalogoPanel {
                         double result =  (a - (a * (b/ 100)));
                         String res = String.format("%.2f", result);
                         prezzoScontatoLbl.setText(res);
+                        //pr
                     }
                 }
             }
