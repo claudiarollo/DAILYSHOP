@@ -6,6 +6,7 @@ import it.unisalento.pps.view.GUI.*;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyEvent;
 
 public class Frame extends JFrame {
 
@@ -82,6 +83,7 @@ public class Frame extends JFrame {
         loginPanel.getIndietroBtn().setActionCommand(LoginListener.INDIETRO_DA_LOGIN);
 
 
+
         RegistrazioneListener registrazionelistener = new RegistrazioneListener(this);
 
         registrazionePanel.getRegistratiBtn().addActionListener(registrazionelistener);
@@ -141,6 +143,7 @@ public class Frame extends JFrame {
         getGestorePanel().getRefreshBtn().setActionCommand(GestoreListener.REFRESH_BTN);
         getGestorePanel().getLogoutBtn().addActionListener(gestoreListener);
         getGestorePanel().getLogoutBtn().setActionCommand(GestoreListener.LOGOUT);
+
 
     }
 

@@ -22,13 +22,17 @@ public class GestoreListener implements ActionListener {
 
     public GestoreListener(Frame frame){
         this.frame=frame;
+
     }
+
 
 
     @Override
     public void actionPerformed(ActionEvent e) {
 
         String sorgenteEvento = e.getActionCommand();
+
+
 
         if(sorgenteEvento.equals(AGGIUNGI_PRODOTTO)){
 
@@ -47,6 +51,7 @@ public class GestoreListener implements ActionListener {
                 if(nome.isEmpty() || foto.isEmpty() || descrizione.isEmpty() || prezzo.isEmpty() || sconto.isEmpty() || produttore.isEmpty()
                         || distributore.isEmpty()){
                     JOptionPane.showMessageDialog(null, "E' necessario inserire tutti i campi per aggiungere un prodotto al catalogo...");
+
                 }
                 else {
                     GestoreBusiness gb = new GestoreBusiness();

@@ -7,6 +7,7 @@ import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import java.awt.*;
+import java.text.DecimalFormat;
 
 public class CatalogoPanel {
     private JPanel catalogoPnl;
@@ -28,11 +29,13 @@ public class CatalogoPanel {
     private JButton backhomeBtn;
     private JPanel sinistraPnl1;
     private JButton creaIlTuoPaniereButton;
+    private JLabel pscontLbl;
+    private JLabel prezzoScontatoLbl;
 
 
     public CatalogoPanel(){
         catalogoPnl.getUI();
-        catalogoPnl.setVisible(true);
+        catalogoPnl.setVisible(false);
         
         catalogoPnl.setPreferredSize(new Dimension(1150,465));
         destraPnl.setPreferredSize(new Dimension(410,465));
@@ -65,6 +68,21 @@ public class CatalogoPanel {
                     scontoProdottoLbl.setText(pb.trovaInfoByNomeProdotto(prodottiList.getSelectedValue().toString()).getSconto());
                     produttoreProdottoLbl.setText(pb.trovaInfoByNomeProdotto(prodottiList.getSelectedValue().toString()).getProduttore());
                     distributoreProdottoLbl.setText(pb.trovaInfoByNomeProdotto(prodottiList.getSelectedValue().toString()).getDistributore());
+
+                    //calcola gli sconti
+                    if(pb.trovaInfoByNomeProdotto(prodottiList.getSelectedValue().toString()).getSconto().equals("Non sono disponibili sconti")){
+                        pscontLbl.setVisible(false);
+                        prezzoScontatoLbl.setVisible(false);
+                    }
+                    else {
+                        pscontLbl.setVisible(true);
+                        prezzoScontatoLbl.setVisible(true);
+                        double a =Double.parseDouble(pb.trovaInfoByNomeProdotto(prodottiList.getSelectedValue().toString()).getPrezzo());
+                        double b =Double.parseDouble(pb.trovaInfoByNomeProdotto(prodottiList.getSelectedValue().toString()).getSconto());
+                        double result =  (a - (a * (b/ 100)));
+                        String res = String.format("%.2f", result);
+                        prezzoScontatoLbl.setText(res);
+                    }
                 }
             }
             catch (Exception e1){}
@@ -192,5 +210,21 @@ public class CatalogoPanel {
 
     public JButton getBackhomeBtn() {
         return backhomeBtn;
+    }
+
+    public JLabel getPscontLbl() {
+        return pscontLbl;
+    }
+
+    public void setPscontLbl(JLabel pscontLbl) {
+        this.pscontLbl = pscontLbl;
+    }
+
+    public JLabel getPrezzoScontatoLbl() {
+        return prezzoScontatoLbl;
+    }
+
+    public void setPrezzoScontatoLbl(JLabel prezzoScontatoLbl) {
+        this.prezzoScontatoLbl = prezzoScontatoLbl;
     }
 }

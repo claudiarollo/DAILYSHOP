@@ -28,11 +28,14 @@ public class GestorePanel {
     private JPanel cancellaProdottoPnl;
 
 
+
+
     public GestorePanel(){
         gestorePanel.getUI();
         gestorePanel.setVisible(false);
 
         gestorePanel.setPreferredSize(new Dimension(900, 650));
+
 
 
         categoriaBox.addItem("Frutta e Verdura");
